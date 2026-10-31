@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Lab Examples</title>
+</head>
+<body>
+
+    <!-- 2.5 Semantic HTML: Header -->
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+
+    <!-- 2.5 Semantic HTML: Navigation -->
+    <nav>
+        <a href="#table-section">Tables</a> | 
+        <a href="#form-section">Forms</a>
+    </nav>
+
+    <hr>
+
+    <!-- 2.3 Working with Tables Section -->
+    <section id="table-section">
+        <article>
+            <h2>2.3 Working with Tables</h2>
+            
+            <!-- Basic Table -->
+            <h3>Basic Table Structure</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Mathematics</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Science</td>
+                    <td>B+</td>
+                </tr>
+            </table>
+
+            <!-- Table with Attributes -->
+            <h3>Table with Attributes (border & colspan)</h3>
+            <table border="1">
+                <tr>
+                    <th colspan="2">Student Information</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Mathematics A+</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <hr>
+
+<nav>
+        <a href="#table-section">Tables</a> | 
+        <a href="#form-section">Forms</a>
+    </nav>
+
+    <!-- 2.4 Creating Forms Section -->
+    <section id="form-section">
+        <article>
+            <h2>2.4 Creating Forms</h2>
+            
+            <form action="submit_form.php" method="post">
+                <!-- Text Inputs -->
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="firstname"><br><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lastname"><br><br>
+
+                <!-- Radio Buttons -->
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <!-- Checkboxes -->
+                <label>Select your hobbies:</label><br>
+                <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+                <label for="hobby2">Gaming</label><br><br>
+
+                <!-- Dropdown -->
+                <label for="country">Choose a country:</label><br>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select><br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- 2.5 Semantic HTML: Footer -->
+    <footer>
+        <p>&copy; 2026 My Web Page</p>
+    </footer>
+
+</body>
+</html>

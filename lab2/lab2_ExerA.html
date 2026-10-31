@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Programming Workshop 2026</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Faculty Programming Workshop 2026</h1>
+        <p>Empowering the next generation of developers with hands on coding skills.</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#about">About the Event</a></li>
+            <li><a href="#schedule">Event Schedule</a></li>
+            <li><a href="#register">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <article>
+            <h3>Keynote Speaker: Dr. Sarah Lee</h3>
+            <p>Dr. Sarah Lee will discuss modern software engineering trends and the future of full-stack web development in the industry.</p>
+        </article>
+
+        <article>
+            <h3>Hands-On Hackathon Activity</h3>
+            <p>Participants will collaborate in small groups to build a responsive web application prototype within a limited timeframe.</p>
+        </article>
+    </section>
+
+    <!-- Event Schedule Section -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:30 AM - 09:00 AM</td>
+                    <td>Registration &amp; Welcome Breakfast</td>
+                    <td rowspan="2">Main Hall</td>
+                    <td>Dr. Ahmad</td>
+                </tr>
+                <tr>
+                    <td>09:00 AM - 10:30 AM</td>
+                    <td>Keynote Presentation</td>
+                    <td>Dr. Sarah Lee</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM - 01:00 PM</td>
+                    <td>Web Development Workshop</td>
+                    <td>Computer Lab 1</td>
+                    <td>Encik Ali</td>
+                </tr>
+                <tr>
+                    <td>01:00 PM - 02:00 PM</td>
+                    <td colspan="3">Lunch Break &amp; Networking</td>
+                </tr>
+                <tr>
+                    <td>02:00 PM - 04:30 PM</td>
+                    <td>Hackathon Coding Session</td>
+                    <td>Computer Lab 1 &amp; 2</td>
+                    <td>Puan Siti</td>
+                </tr>
+                <tr>
+                    <td>04:30 PM - 05:00 PM</td>
+                    <td>Closing Ceremony &amp; Prize Giving</td>
+                    <td>Main Hall</td>
+                    <td>Dean of Faculty</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register">
+        <h2>Registration</h2>
+        <form action="register.html" method="post">
+            
+            <!-- Text Inputs -->
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div>
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Radio Buttons (Same name group) -->
+            <fieldset>
+                <legend>Year of Study:</legend>
+                <input type="radio" id="year1" name="year_of_study" value="Year 1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                <label for="year4">Year 4</label>
+            </fieldset>
+
+            <!-- Checkboxes (At least 3 choices) -->
+            <fieldset>
+                <legend>Sessions to Join:</legend>
+                <input type="checkbox" id="sess_keynote" name="sessions" value="Keynote">
+                <label for="sess_keynote">Keynote Presentation</label><br>
+                <input type="checkbox" id="sess_workshop" name="sessions" value="Workshop">
+                <label for="sess_workshop">Web Development Workshop</label><br>
+                <input type="checkbox" id="sess_hackathon" name="sessions" value="Hackathon">
+                <label for="sess_hackathon">Hackathon Coding Session</label>
+            </fieldset>
+
+            <!-- Drop-down List (<select> with at least 4 options) -->
+            <div>
+                <label for="programme">Programme:</label>
+                <select id="programme" name="programme">
+                    <option value="" disabled selected>Select your programme</option>
+                    <option value="software_engineering">Software Engineering</option>
+                    <option value="network_security">Network Security</option>
+                    <option value="data_science">Data Science</option>
+                    <option value="computer_graphics">Computer Graphics</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Register Now">
+            </div>
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematics, UMT.</p>
+        <p>&copy; 2026 UMT. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
