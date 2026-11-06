@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 3</title>
+</head>
+<body>
+
+    <!-- 3. Header Section -->
+    <div>
+        <h1>Interactive Contact Form <span>& Calculator</span></h1>
+    </div>
+
+    <!-- 4. Content Section -->
+    <!-- Contact Form Section -->
+    <div>
+        <h2>Contact Form</h2>
+        <form action="#">
+            <!-- Email input for user contact -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Date input for the user's preferred contact date -->
+            <label for="contact-date">Preferred Contact Date:</label>
+            <input type="date" id="contact-date" name="contact-date"><br><br>
+
+            <!-- Range slider for user satisfaction level -->
+<p>
+    <label for="satisfaction">Satisfaction Level:</label><br>
+    
+    <!-- slider & number -->
+    <div style="width: 250px; display: inline-block;">
+        <!-- Slider -->
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="5" step="1" value="3" list="sweetness-ticks" style="width: 100%; margin: 0;">
+        
+        <!-- (Datalist) -->
+        <datalist id="satisfaction-ticks">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+        </datalist>
+
+        <!-- Label number below the bar -->
+        <div style="display: flex; justify-content: space-between; padding: 0 5px; font-size: 14px; font-weight: bold; color: #555;">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+    </div>
+               </p>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Inline Calculator Section -->
+    <div>
+        <h2>Inline Calculator</h2>
+        <form oninput="result.value=parseInt(num1.value||0)+parseInt(num2.value||0)">
+            <!-- Two input fields where users can enter numbers -->
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" name="num1" value="0">
+            
+            <span>+</span>
+            
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" name="num2" value="0">
+            
+            <span>=</span>
+            
+            <!-- Output element to show the sum dynamically -->
+            <output name="result" for="num1 num2">0</output>
+        </form>
+    </div>
+
+    <!-- 5. Footer Section -->
+    <div>
+        <footer>
+            <p>&copy; 2026 Interactive Contact Form. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CampusBake</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>CampusBake<span> - Freshly Baked Daily on Campus!</span></h1>
+    </div>
+
+    <!-- Navigation Bar Section -->
+    <div id="nav">
+        <a href="#home">Home</a> | 
+        <a href="#calc">Order</a> | 
+        <a href="#pricelist">Price List</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+        <h2>Welcome to Enol's CampusBake;)</h2>
+        <p>
+            We prepare <strong>freshly baked pastries</strong> and delicious cakes every single morning. Visit our campus store or <em>order online</em> for convenient quick pick-ups. For special event inquiries, please feel free to <a href="mailto:info@campusbake.com">contact us via email</a>.
+        </p>
+
+        <!-- Order Form Section -->
+        <div id="order-form-container">
+            <h2>Place Your Order</h2>
+            
+            <form action="#" method="post" oninput="total.value = (parseInt(cupcakes.value) * 3 + parseInt(cakeSlices.value) * 5 + parseInt(wholeCakes.value) * 45)">
+                <!-- Customer Information -->
+                <p>
+                    <label for="fullname">Customer Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autofocus>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 012-3456789" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </p>
+
+                <!-- Pick-up Details -->
+                <p>
+                    <label for="pickupdate">Pick-up Date:</label><br>
+                    <input type="date" id="pickupdate" name="pickupdate" required>
+                </p>
+
+                <p>
+                    <label for="pickuptime">Pick-up Time:</label><br>
+                    <input type="time" id="pickuptime" name="pickuptime" required>
+                </p>
+
+                <!-- Product Preferences -->
+                <p>
+                    <label for="flavour">Select Flavour:</label><br>
+                    <input type="text" id="flavour" name="flavour" list="flavour-list" placeholder="Choose or type a flavour">
+                    <datalist id="flavour-list">
+                        <option value="Chocolate Fudge">
+                        <option value="Red Velvet">
+                        <option value="Vanilla Bean">
+                        <option value="Green Tea">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="icing">Icing Colour:</label><br>
+                    <input type="color" id="icing" name="icing" value="#ffb6c1">
+                </p>
+
+                <p>
+    <label for="sweetness">Sweetness Level:</label><br>
+    
+    <!-- slider & number -->
+    <div style="width: 250px; display: inline-block;">
+        <!-- Slider -->
+        <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value="3" list="sweetness-ticks" style="width: 100%; margin: 0;">
+        
+        <!-- (Datalist) -->
+        <datalist id="sweetness-ticks">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+        </datalist>
+
+        <!-- Label number below the bar -->
+        <div style="display: flex; justify-content: space-between; padding: 0 5px; font-size: 14px; font-weight: bold; color: #555;">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+    </div>
+               </p>
+
+                <!-- Price Calculator Inputs -->
+                <section id="calc">
+                <h3>Order Quantity & Price Calculator</h3>
+                <p>
+                    <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+                </p>
+
+                <p>
+                    <label for="cakeSlices">Cake Slices (RM 5.00 each):</label><br>
+                    <input type="number" id="cakeSlices" name="cakeSlices" min="0" value="0">
+                </p>
+
+               <p>
+                    <label for="wholeCakes">Customized Whole Cakes (RM 45.00 each):</label><br>
+                    <input type="number" id="wholeCakes" name="wholeCakes" min="0" value="0">
+               </p>
+
+                <p>
+                    <strong>Total Price: RM <output name="total" for="cupcakes cakeSlices wholeCakes">0</output>.00</strong>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit Order">
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="pricelist">
+        <h2>Price List</h2>
+        <ul>
+            <li>Cupcake &reg; Original: RM 3.00</li>
+            <li>Premium Cake Slice: RM 5.00</li>
+            <li>Customized Whole Cake: RM 45.00</li>
+        </ul>
+        <p><strong>Special Offer:</strong> Orders &gt; 10 pieces get a free drink!</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 CampusBake&reg; &nbsp;|&nbsp; All Rights Reserved &pound; &euro;</p>
+    </div>
+
+   </body>
+</html>
