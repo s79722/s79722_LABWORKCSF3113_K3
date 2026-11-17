@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - Responsive Webpage</title>
+    
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Internal CSS -->
+    <style>
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            text-decoration: underline overline;
+            letter-spacing: 1px;
+        }
+
+        .highlight-strike {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>Modern Web Design &amp; Media</h1>
+        <p>Exploring HTML5 Semantics and CSS3 Styling</p>
+    </header>
+
+    <!-- Semantic Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Featured Video</a></li>
+            <li><a href="#register">Feedback Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Semantic Section & Article -->
+        <section id="about">
+            <h2>About This Webpage</h2>
+            <article>
+                <h3>Why Semantic HTML Matters</h3>
+                <p>
+                    Using semantic elements makes webpages <span class="highlight-strike">hard to read</span> 
+                    clear, accessible, and easy to maintain across modern browsers.
+                </p>
+            </article>
+        </section>
+
+        <!-- Embedded Media Section -->
+        <section id="media">
+            <h2>Featured Media</h2>
+            <figure>
+                <!-- Sample reliable public HTML5 video -->
+                <video controls width="100%">
+                    <source src="C:\Users\HP\Downloads\terengganu.mp4" type="video/mp4">
+                    Your browser does not support the HTML5 video tag.
+                </video>
+                <figcaption>Figure 1: Sample HD promotional video embedded using HTML5 &lt;video&gt; and &lt;figcaption&gt;.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Interactive Form Section -->
+        <section id="register">
+            <h2>User Registration &amp; Hobbies</h2>
+            <form action="#" method="post">
+                <!-- Name (Text Input) -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email (Text Input as specified) -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <!-- Gender (Radio Buttons) -->
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="inline-options">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <!-- Favorite Hobbies (Checkboxes) -->
+                <div class="form-group">
+                    <label>Favorite Hobbies:</label>
+                    <div class="inline-options">
+                        <input type="checkbox" id="coding" name="hobbies" value="Coding">
+                        <label for="coding">Coding</label>
+
+                        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                        <label for="sports">Sports</label>
+               <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                        <label for="reading">Reading</label>
+
+                        <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+                        <label for="gaming">Gaming</label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>&copy; 2026 Lab Exercise 4 | Built with HTML5 &amp; CSS3</p>
+    </footer>
+
+</body>
+</html>

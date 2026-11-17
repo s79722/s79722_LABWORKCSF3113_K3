@@ -1,0 +1,153 @@
+/* General Body & Layout Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf6;
+    color: #2c2c2c;
+}
+
+header {
+    background-color: #4a2c2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0d6cc;
+    border-radius: 6px;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6f4e37;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #6f4e37;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link States in Correct LVHA Order */
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #f3d5b5;
+}
+
+a:hover {
+    background-color: #d4a373;
+    color: #2c1810;
+}
+
+a:active {
+    background-color: #bc6c25;
+    color: #ffffff;
+}
+
+/* Menu Items & Promotion Old Price */
+.item {
+    border-bottom: 1px dashed #cccccc;
+    padding: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #7f8c8d;
+    margin-right: 6px;
+}
+
+/* Responsive Video & Caption Styling */
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 8px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    background-color: #faf3e0;
+    padding: 20px;
+    border: 1px solid #d4a373;
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #bcaaa4;
+    border-radius: 4px;
+}
+
+.feedback-form button {
+    background-color: #6f4e37;
+    color: #ffffff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #4a2c2a;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4a2c2a;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a:link,
+footer a:visited {
+    color: #f3d5b5;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    background-color: transparent;
+    color: #e67e22;
+}

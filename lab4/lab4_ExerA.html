@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Responsive Viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu - Tourism Promotion</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS (Page-Specific Rules) -->
+    <style>
+        header {
+            background-color: #005f73;
+            color: #ffffff;
+            padding: 30px 15px;
+            text-align: center;
+        }
+        
+        .highlight-banner {
+            background-color: #e9d8a6;
+            color: #001219;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header>
+        <h1>Visit Terengganu 2026</h1>
+        <p>Discover Beautiful Islands, Rich Heritage &amp; Local Delights</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Promo Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Section 1: Destinations -->
+        <section id="destinations">
+            <h2>Top Student &amp; Visitor Packages</h2>
+            <div class="highlight-banner">
+                Limited Seats Available! Book now before the semester break ends.
+            </div>
+
+            <!-- Destination Card 1 -->
+            <article class="card">
+                <h3>Pulau Redang Snorkeling Escape</h3>
+                <p>Experience crystal-clear turquoise waters, white sandy beaches, and vibrant coral reefs on a 3D2N island getaway.</p>
+                <p>Promotion Price: <span class="old-price">RM 450</span> <span class="price">RM 299</span></p>
+            </article>
+
+            <!-- Destination Card 2 -->
+            <article class="card">
+                <h3>Kuala Terengganu Heritage &amp; Drawbridge Tour</h3>
+                <p>Explore Pasar Payang, Islamic Civilization Park, and catch the sunset at the iconic Kuala Terengganu Drawbridge.</p>
+                <p>Promotion Price: <span class="old-price">RM 180</span> <span class="price">RM 110</span></p>
+            </article>
+
+            <!-- Destination Card 3 -->
+            <article class="card">
+                <h3>Kenyir Lake Eco-Adventure</h3>
+                <p>Stay on a traditional houseboat, visit Lasir Waterfall, and enjoy kayaking in Southeast Asia's largest man-made lake.</p>
+                <p>Promotion Price: <span class="old-price">RM 320</span> <span class="price">RM 225</span></p>
+            </article>
+
+            <!-- Trip Seats Meter -->
+            <div class="seat-tracker">
+                <label for="seats"><strong>Trip Seats Filled (28 / 40 seats):</strong></label>
+                <meter id="seats" min="0" max="40" value="28">28 out of 40</meter>
+            </div>
+        </section>
+
+        <!-- Section 2: Promotional Video -->
+        <section id="video">
+            <h2>Experience the Beauty of Terengganu</h2>
+            <figure class="center">
+                <video width="640" height="360" controls>
+                    <source src="C:\Users\HP\Downloads\terengganu.mp4" type="video/mp4">
+                    Your browser does not support the HTML5 video tag. Please upgrade your browser.
+                </video>
+                <figcaption class="caption">Official Promotional Video: Wonders of Terengganu.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section 3: Trip Interest Form -->
+        <section id="trip">
+            <h2>Register Your Trip Interest</h2>
+            <form class="trip-form" action="#" method="post">
+                <p>
+                    <label for="fullname"><strong>Full Name:</strong></label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </p>
+                <p>
+                    <label for="email"><strong>E-mail Address:</strong></label><br>
+                    <input type="email" id="email" name="email" placeholder="example@student.umt.edu.my" required>
+                </p>
+
+                <p><strong>Traveller Type:</strong><br>
+                    <input type="radio" id="student" name="traveller_type" value="Student" required>
+                    <label for="student">Student</label>
+                    <input type="radio" id="staff" name="traveller_type" value="Staff">
+                    <label for="staff">Staff</label>
+                    <input type="radio" id="public" name="traveller_type" value="Public">
+                    <label for="public">Public</label>
+                </p>
+
+                <p><strong>Interests (Select all that apply):</strong><br>
+                    <input type="checkbox" id="islands" name="interests" value="Islands">
+                    <label for="islands">Islands</label>
+                    <input type="checkbox" id="food" name="interests" value="Food">
+                    <label for="food">Food</label>
+                    <input type="checkbox" id="culture" name="interests" value="Culture">
+                    <label for="culture">Culture</label>
+                    <input type="checkbox" id="nature" name="interests" value="Nature">
+                    <label for="nature">Nature</label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Interest</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2026 Terengganu State Tourism Office. All rights reserved.</p>
+        <address>
+            Inquiries: <a href="mailto:tourism@terengganu.gov.my">tourism@terengganu.gov.my</a>
+        </address>
+    </footer>
+
+</body>
+</html>
