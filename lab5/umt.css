@@ -1,0 +1,134 @@
+/* Reset and Body Background */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F4F7FA;
+    background-image: linear-gradient(135deg, #F4F7FA 0%, #E6EEF5 100%);
+    color: #222222;
+    line-height: 1.7;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #2E1A47 0%, #512D6D 100%);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.05rem;
+    color: #E0D7EC;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #1F1230;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    transition: background-color 0.25s ease;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #3D245E;
+}
+
+nav li a.active {
+    background-color: #F39C12;
+    color: #1F1230;
+    font-weight: 700;
+}
+
+/* Main Content Layout & Spacing */
+main {
+    width: 90%;
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+article {
+    background-color: #FFFFFF;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #2E1A47;
+    border-left: 5px solid #F39C12;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+/* Table Styling */
+#umt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#umt-table th,
+#umt-table td {
+    border: 1px solid #DCDFE6;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#umt-table th {
+    background-color: #512D6D;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+}
+
+#umt-table tr:nth-child(even) {
+    background-color: #F8F9FB;
+}
+
+#umt-table tr:hover {
+    background-color: #EFE8F6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #E2E6EE;
+    color: #333333;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
